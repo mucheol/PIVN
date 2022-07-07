@@ -255,7 +255,7 @@ section {
 }
 #content03 .container {
   position: relative;
-  width: 700px;
+  width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,8 +263,8 @@ section {
 }
 #content03 .loader {
   position: relative;
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
   border-radius: 50%;
   background-color: #b71b1b14;
   animation: animate 5s linear infinite;
@@ -323,7 +323,7 @@ section {
 }
 #content03 .textBox {
   position: absolute;
-  left: 30px;
+  left: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
