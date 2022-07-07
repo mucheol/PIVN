@@ -242,6 +242,7 @@ section {
 /* content03 */
 #content03 {
   color: #fff;
+  overflow: hidden;
 }
 #content03 .inner {
   position: relative;
@@ -254,7 +255,7 @@ section {
 }
 #content03 .container {
   position: relative;
-  width: 800px;
+  width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,8 +263,8 @@ section {
 }
 #content03 .loader {
   position: relative;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   background-color: #b71b1b14;
   animation: animate 5s linear infinite;
@@ -292,11 +293,11 @@ section {
 #content03 .loader::after {
   content: '';
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: #d52525;
   border-radius: 50%;
   z-index: 10;
@@ -322,7 +323,7 @@ section {
 }
 #content03 .textBox {
   position: absolute;
-  left: 80px;
+  left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
