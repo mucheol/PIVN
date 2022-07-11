@@ -11,6 +11,7 @@ $(document).ready(function(){
   
   $('.subTextBox p').hover(function(){
     const img = document.querySelector('.backImg');
+    $(this).siblings().removeClass('active');
     $(this).addClass('active');
     if($(this).hasClass('sTBp01')){
       $('#content03 #inner').removeClass();
@@ -37,11 +38,11 @@ $(document).ready(function(){
       $('#content03 #inner').addClass('p05');
       img.src = "/image/missionBack5.png";
     }else {
-      $('#content03 #inner').removeClass();
-      img.src="";
+
     }
-  },function(){
-    $(this).removeClass('active');
+  // },function(){
+  //   $(this).removeClass('active');
+  //   img.src="";
   });
 
 
@@ -77,4 +78,11 @@ $(document).ready(function(){
   });
   $(".slick-prev").html("");
   $(".slick-next").html("");
+
+  // hamburger 
+  $('.m_hamburger').on('click',function(){
+    $('.header_inner nav').toggleClass('active');
+    console.log('왜안댕')
+  });
+
 });

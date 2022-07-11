@@ -435,12 +435,12 @@ section {
 }
 #content03 .textBox {
   position: absolute;
-  left: 80px;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 650px;
+  width: 800px;
 }
 #content03 .title {
   font-size: 2.4rem;
@@ -467,40 +467,46 @@ section {
   position: absolute;
   top: 55px;
   left: -50px;
-  display: block;
+  display: none;
   width: 8px;
   height: 8px;
   background-color: #b71b1b;
   border-radius: 50%;
+  transition: .3s;
 }
 #content03 .subTextBox p:nth-child(1){
   margin-left: 156px;
 }
 #content03 .subTextBox p:nth-child(1).active span {
+  display: block;
   background-color: #78c4ff;
 }
 #content03 .subTextBox p:nth-child(2){
   margin-left: 215px;
 }
 #content03 .subTextBox p:nth-child(2).active span{
+  display: block;
   background-color: #c600b1;
 }
 #content03 .subTextBox p:nth-child(3){
   margin-left: 222px;
 }
 #content03 .subTextBox p:nth-child(3).active span{
+  display: block;
   background-color: #005a9f;
 }
 #content03 .subTextBox p:nth-child(4){
   margin-left: 179px;
 }
 #content03 .subTextBox p:nth-child(4).active span{
+  display: block;
   background-color: #5e009f;
 }
 #content03 .subTextBox p:nth-child(5){
   margin-left: 97px;
 }
 #content03 .subTextBox p:nth-child(5).active span{
+  display: block;
   background-color: #fbbb60;
 }
 #content03 .subTextBox_background {
@@ -941,4 +947,63 @@ section {
   height: 60%;
   margin-right: 2px;
   margin-top: 2px;
+}
+
+@media (max-width: 1366px) {
+  .header_inner nav {
+    position: absolute;
+    top: 110px;
+    right: -300px;
+    width: 300px;
+    height: 540px;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 37px 0 37px 40px;
+    background-color: #000;
+    transition: .4s;
+  }
+  .header_inner nav.active {
+    right: 0;
+  }
+  .header_inner nav ul {
+    flex-direction: column;
+  }
+  .header_inner nav ul li {
+    margin: 23px 0;
+    padding: 0;
+  }
+  .header_inner nav ul li a:hover {
+    color: #b71b1b;
+  }
+  .langBox {
+    right: 120px;
+  }
+  .m_hamburger {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 18px;
+    right: 30px;
+    cursor: pointer;
+  }
+  .m_hamburger::after {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #b71b1b;
+    border-radius: 50%;
+  }
+  .m_hamburger span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin: 9px 0;
+  }
 }
