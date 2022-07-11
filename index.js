@@ -2,6 +2,7 @@ $(document).ready(function(){
   $('#fullpage').fullpage({
     //options here
     anchors: ['section01', 'section02', 'section03', 'section04', 'section05', 'section06', 'section07'],
+    menu: '#myMenu',
     autoScrolling:true,
     scrollHorizontally: true,
     dragAndMove : true
