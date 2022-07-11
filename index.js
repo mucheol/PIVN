@@ -54,23 +54,9 @@ $(document).ready(function(){
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1366,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
           slidesToScroll: 1
         }
       }
@@ -82,7 +68,11 @@ $(document).ready(function(){
   // hamburger 
   $('.m_hamburger').on('click',function(){
     $('.header_inner nav').toggleClass('active');
-    console.log('왜안댕')
+    $(this).toggleClass('active');
+  });
+  $('#myMenu').on('click',function(){
+    $('.header_inner nav').toggleClass('active');
+    $('.m_hamburger').toggleClass('active');
   });
 
 });

@@ -156,3 +156,8 @@ a, a:active, a:visited {
 html {
   font-size: 62.5%;
 }
+@media (max-width: 1366px) {
+  html {
+    font-size: 56.25%;
+  }
+}

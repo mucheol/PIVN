@@ -14,8 +14,14 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
   <link rel="stylesheet" type="text/css" href="/plugin/fullpage.min.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="/plugin/splitting.css">
 </head>
 <body>
+  <div class="loadingPage">
+    <div class="loadingAni" data-splitting>
+      CIRCLE-TEXT-ANIMATION-EFFECTS-
+    </div>
+  </div>
   <div class="wrap">
     <div class="wrap_inner">
       <header>
@@ -99,9 +105,7 @@
               <p class="sTBp04"><span class="dot"></span>탈중앙화 신원증명 기술 DID<br>(Decentralized Identifier)</p>
               <p class="sTBp05"><span class="dot"></span>스마트 컨트랙트 기술</p>
             </div>
-            <div class="subTextBox_background">
-              <!-- <img src="/image/missionBack.png" alt="mission background" class="backImg"> -->
-            </div>
+            <div class="subTextBox_background"></div>
           </div>
         </section>
         <section id="content04" class="section">
@@ -290,6 +294,8 @@
   <script src="/particles.js"></script>
   <script src="/plugin/slick.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="/plugin/splitting.js"></script>
+  <script> Splitting(); </script>
   <script src="/index.js"></script>
 </body>
 </html>

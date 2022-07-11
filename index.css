@@ -7,6 +7,42 @@ body {
 .wrap_inner {
   margin: 0 auto;
 }
+/* 로딩애니메이션 */
+.loadingPage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.loadingAni {
+  transform-style: preserve-3d;
+  animation: lodingAnimate 8s linear infinite;
+}
+@keyframes lodingAnimate {
+  0% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
+  }
+}
+.loadingAni .char {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #b71b1b;
+  font-size: 4em;
+  padding: 5px 12px;
+  border-top: 4px solid #b71b1b;
+  border-bottom: 4px solid #b71b1b;
+  transform-style: preserve-3d;
+  transform-origin: center;
+  transform: rotateY(calc(var(--char-index) * 12deg)) translateZ(250px);
+}
 /* 헤더 */
 header {
   position: fixed;
@@ -52,7 +88,6 @@ nav ul li a:active,
 nav ul li a:visited {
   color: #fff;
   font-size: 1.8rem;
-  font-weight: bold;
 }
 .langBox {
   position: absolute;
@@ -85,9 +120,7 @@ section {
   height: 100vh;
 }
 .inner {
-  max-width: 1300px;
-  width: 68vw;
-  min-width: 1000px;
+  width: 1300px;
 }
 /* 콘텐츠 */
 /* CONTENT01 */
@@ -452,7 +485,7 @@ section {
 }
 #content03 .subTextBox {
   width: 650px;
-  font-size: 22px;
+  font-size: 2.2rem;
   text-align: left;
 }
 #content03 .subTextBox p{
@@ -475,35 +508,35 @@ section {
   transition: .3s;
 }
 #content03 .subTextBox p:nth-child(1){
-  margin-left: 156px;
+  margin-left: 15.6rem;
 }
 #content03 .subTextBox p:nth-child(1).active span {
   display: block;
   background-color: #78c4ff;
 }
 #content03 .subTextBox p:nth-child(2){
-  margin-left: 215px;
+  margin-left: 21.5rem;
 }
 #content03 .subTextBox p:nth-child(2).active span{
   display: block;
   background-color: #c600b1;
 }
 #content03 .subTextBox p:nth-child(3){
-  margin-left: 222px;
+  margin-left: 22.2rem;
 }
 #content03 .subTextBox p:nth-child(3).active span{
   display: block;
   background-color: #005a9f;
 }
 #content03 .subTextBox p:nth-child(4){
-  margin-left: 179px;
+  margin-left: 17.9rem;
 }
 #content03 .subTextBox p:nth-child(4).active span{
   display: block;
   background-color: #5e009f;
 }
 #content03 .subTextBox p:nth-child(5){
-  margin-left: 97px;
+  margin-left: 9.7rem;
 }
 #content03 .subTextBox p:nth-child(5).active span{
   display: block;
@@ -623,8 +656,8 @@ section {
   position: relative;
   font-size: 3.4rem;
   font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 #content04 .rightBox .subTitle span{
   border-bottom: 2px solid #b71b1b;
@@ -761,7 +794,7 @@ section {
   margin-left: 185px;
 }
 #content06 .year {
-  font-size: 25px;
+  font-size: 2.5rem;
   color: #b71b1b;
   margin-bottom: -20px;
 }
@@ -796,7 +829,7 @@ section {
 }
 #content07 .title {
   color: #fff;
-  font-size: 34px;
+  font-size: 3.4rem;
 }
 #content07 .photoBox {
   width: 1200px;
@@ -834,7 +867,7 @@ section {
 }
 #content07 .photoBox .profile .position {
   position: relative;
-  font-size: 23px;
+  font-size: 2.3rem;
   font-weight: bold;
   margin-top: 35px;
 }
@@ -849,13 +882,13 @@ section {
 }
 #content07 .photoBox .profile .name {
   margin-top: 30px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 #content07 .photoBox .profile .name span {
-  font-size: 20px;
+  font-size: 2rem;
 }
 #content07 .photoBox .profile .major {
-  font-size: 16px;
+  font-size: 1.6rem;
   margin-top: 15px;
 }
 .slick-prev,
@@ -925,7 +958,7 @@ section {
   height: 45px;
 }
 .footer p {
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #fff;
   margin-top: 32px;
 }
@@ -968,6 +1001,14 @@ section {
 }
 
 @media (max-width: 1366px) {
+  /* header */
+  header {
+    background-color: transparent;
+  }
+  .logoBox {
+    width: 95px;
+    height: 35px;
+  }
   .header_inner nav {
     position: absolute;
     top: 110px;
@@ -1006,15 +1047,19 @@ section {
     cursor: pointer;
   }
   .m_hamburger::after {
+    display: none;
     position: absolute;
     top: 65px;
     left: 50%;
     transform: translate(-50%,-50%);
     content: "";
-    width: 3px;
-    height: 3px;
+    width: 10px;
+    height: 10px;
     background-color: #b71b1b;
     border-radius: 50%;
+  }
+  .m_hamburger.active::after {
+    display: block;
   }
   .m_hamburger span {
     position: relative;
@@ -1023,5 +1068,126 @@ section {
     height: 3px;
     background-color: #fff;
     margin: 9px 0;
+  }
+
+  /* M_CONTENT01 */
+  .imgBox{
+    width: 390px;
+    height: 125px;
+  }
+  #content01 .imgBox_inner p {
+    font-size: 161px;
+  }
+  #content01 .imgBox_inner span {
+    width: 80px;
+  }
+  #content01 .textBox p {
+    margin-top: 30px;
+  }
+
+  /* M_CONTENT02 */
+  #content02 .imgBox {
+    width: 800px;
+    height: 250px;
+  }
+  #content02 .textBox {
+    margin-top: 100px;
+  }
+  #content02 .content_des {
+    margin-bottom: 65px;
+  }
+
+  /* M_CONTENT03 */
+  #content03 .container {
+    width: 600px;
+  }
+  #content03 .loader {
+    width: 600px;
+    height: 600px;
+  }
+  #content03 .textBox {
+    width: 600px;
+  }
+  #content03 .subTextBox {
+    width: auto;
+  }
+  #content03 .subTextBox_background {
+    top: 1%;
+    left: 255px;
+    width: 1102px;
+    height: 98%;
+  }
+
+  /* M_CONTENT04 */
+  #content04 {
+    padding-top: 0px;
+  }
+  #content04 .leftBox {
+    height: 450px;
+  }
+  .content04Back {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: calc(100% - 70px);
+    z-index: -1;
+  }
+  #content04 .leftBox img:nth-child(1) {
+    left: 36%;
+  }
+  #content04 .leftBox img:nth-child(2) {
+    top: 67%;
+    left: 61%;
+  }
+
+  /* M_CONTENT06 */
+  #content06 .loadBox01 p:nth-child(2) {
+    margin-top: 18px;
+  }
+  #content06 .roadLine::before {
+    top: 180px;
+  }
+  #content06 .roadLine::after {
+    top: 180px;
+  }
+  #content06 .roadDot, #content06 .roadDot02 {
+    top: 174px;
+  }
+  #content06 .loadBox {
+    margin-top: 50px;
+  }
+  #content06 .year {
+    margin-bottom: 0px;
+  }
+  #content06 ul {
+    margin-top: 25px;
+  }
+
+  /* M_CONTENT07 */
+  #content07 .title {
+    padding-top: 50px;
+  }
+  #content07 .photoBox {
+    width: 900px;
+    height: 460px;
+    margin-top: 0;
+  }
+  #content07 .photoBox .photoBox_inner {
+    align-items: center;
+  }
+  #content07 .photoBox .profile {
+    padding: 45px 0 35px;
+  }
+  #content07 .photoBox .profile .imgBox {
+    width: 180px;
+    height: 165px;
+    border-radius: 25px;
+  }
+  .footer {
+    width: 100vw;
+    height: 110px;
+  }
+  .footer .imgBox {
+    margin-left: 70px;
   }
 }
