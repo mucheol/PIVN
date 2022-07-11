@@ -515,8 +515,26 @@ section {
   left: 550px;
   width: 1000px;
   height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.1;
 }
-
+#content03 #inner.p01 .subTextBox_background {
+  background-image: url("/image/missionBack.png");
+}
+#content03 #inner.p02 .subTextBox_background {
+  background-image: url("/image/missionBack2.png");
+}
+#content03 #inner.p03 .subTextBox_background {
+  background-image: url("/image/missionBack3.png");
+}
+#content03 #inner.p04 .subTextBox_background {
+  background-image: url("/image/missionBack4.png");
+}
+#content03 #inner.p05 .subTextBox_background {
+  background-image: url("/image/missionBack5.png");
+}
 #content03 .subTextBox_background img{
   width: 100%;
   opacity: 0.15;

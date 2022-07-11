@@ -16,27 +16,27 @@ $(document).ready(function(){
     if($(this).hasClass('sTBp01')){
       $('#content03 #inner').removeClass();
       $('#content03 #inner').addClass('p01');
-      img.src = "/image/missionBack.png";
+      // img.src = "/image/missionBack.png";
     }
     else if($(this).hasClass('sTBp02')){
       $('#content03 #inner').removeClass();
       $('#content03 #inner').addClass('p02');
-      img.src = "/image/missionBack2.png";
+      // img.src = "/image/missionBack2.png";
     }
     else if($(this).hasClass('sTBp03')){
       $('#content03 #inner').removeClass();
       $('#content03 #inner').addClass('p03');
-      img.src = "/image/missionBack3.png";
+      // img.src = "/image/missionBack3.png";
     }
     else if($(this).hasClass('sTBp04')){
       $('#content03 #inner').removeClass();
       $('#content03 #inner').addClass('p04');
-      img.src = "/image/missionBack4.png";
+      // img.src = "/image/missionBack4.png";
     }
     else if($(this).hasClass('sTBp05')){
       $('#content03 #inner').removeClass();
       $('#content03 #inner').addClass('p05');
-      img.src = "/image/missionBack5.png";
+      // img.src = "/image/missionBack5.png";
     }else {
 
     }
