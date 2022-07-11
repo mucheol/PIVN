@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
   <link rel="stylesheet" type="text/css" href="/plugin/fullpage.min.css" />
-  <link rel="stylesheet" href="/plugin/slick.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
 <body>
   <div class="wrap">
@@ -77,7 +77,7 @@
         </section>
 
         <section id="content03" class="section">
-          <div class="inner">
+          <div id="inner" >
             <div class="container">
               <div class="loader"><span></span></div>
             </div>
@@ -88,11 +88,14 @@
               </p>
             </div>
             <div class="subTextBox">
-              <p>개인정보 보호</p>
-              <p>WEB3.0 미래를 위한 준비</p>
-              <p>세계 올인원 배송 플랫폼</p>
-              <p>탈중앙화 신원증명 기술 DID<br>(Decentralized Identifier)</p>
-              <p>스마트 컨트랙트 기술</p>
+              <p class="sTBp01"><span class="dot"></span> 개인정보 보호</p>
+              <p class="sTBp02">WEB3.0 미래를 위한 준비</p>
+              <p class="sTBp03">세계 올인원 배송 플랫폼</p>
+              <p class="sTBp04">탈중앙화 신원증명 기술 DID<br>(Decentralized Identifier)</p>
+              <p class="sTBp05">스마트 컨트랙트 기술</p>
+            </div>
+            <div class="subTextBox_background">
+              <img src="/image/missionBack.png" alt="mission background" class="backImg">
             </div>
           </div>
         </section>
@@ -131,72 +134,148 @@
               <p>Road map</p>
               <p>PIVN Road map</p>
             </div>
-            <div class="loadBox02">
-              <p class="year">2022</p>
-              <ul>
-                <p>Q1</p>
-                <li>위메프와 「보안 배송 시스템」구축 제휴</li>
-                <li>GS25택배에 「홈넘버 보안 배송 시스템」공급</li>
-              </ul>
-              <ul>
-                <p>Q2</p>
-                <li>롯데홈쇼핑 및 위메프에 「보안 배송 시스템」공급</li>
-              </ul>
-              <ul>
-                <p>Q3</p>
-                <li>지갑 생성(탈 중앙화) 멀티 체인</li>
-                <li>개인정보 보호 Dapp 개발</li>
-                <li>NFT 민트</li>
-                <li>NFT 마켓 개발</li>
-                <li>홈쇼핑 및 오픈마켓에 「보안 배송 시스템」 공급</li>
-              </ul>
-              <ul>
-                <p>Q4</p>
-                <li>현대백화점에 「홈넘버 보안 배송 시스템」 공급</li>
-                <li>홈쇼핑 및 오픈마켓에 「홈넘버 배송지 공동인증 서비스」 공급</li>
-                <li>블록체인 에스크로 착불 직거래 플랫폼 개발</li>
-              </ul>
-            </div>
-            <div class="loadBox03">
-              <p class="year">2023</p>
-              <ul>
-                <p>Q1</p>
-                <li>동남아 시장 진출</li>
-              </ul>
-              <ul>
-                <p>Q2</p>
-                <li>일본 시장 진출</li>
-              </ul>
-              <ul>
-                <p>Q3</p>
-                <li>미국 시장 진출</li>
-              </ul>
+            <span class="roadLine"></span>
+            <span class="roadDot"></span>
+            <span class="roadDot02"></span>
+            <div class="loadBox">
+              <div class="loadBox02">
+                <p class="year">2022</p>
+                <ul>
+                  <p>Q1</p>
+                  <li>위메프와 「보안 배송 시스템」구축 제휴</li>
+                  <li>GS25택배에 「홈넘버 보안 배송 시스템」공급</li>
+                </ul>
+                <ul>
+                  <p>Q2</p>
+                  <li>롯데홈쇼핑 및 위메프에 「보안 배송 시스템」공급</li>
+                </ul>
+                <ul>
+                  <p>Q3</p>
+                  <li>지갑 생성(탈 중앙화) 멀티 체인</li>
+                  <li>개인정보 보호 Dapp 개발</li>
+                  <li>NFT 민트</li>
+                  <li>NFT 마켓 개발</li>
+                  <li>홈쇼핑 및 오픈마켓에 「보안 배송 시스템」 공급</li>
+                </ul>
+                <ul>
+                  <p>Q4</p>
+                  <li>현대백화점에 「홈넘버 보안 배송 시스템」 공급</li>
+                  <li>홈쇼핑 및 오픈마켓에 「홈넘버 배송지 공동인증 서비스」 공급</li>
+                  <li>블록체인 에스크로 착불 직거래 플랫폼 개발</li>
+                </ul>
+              </div>
+              <div class="loadBox03">
+                <p class="year">2023</p>
+                <ul>
+                  <p>Q1</p>
+                  <li>동남아 시장 진출</li>
+                </ul>
+                <ul>
+                  <p>Q2</p>
+                  <li>일본 시장 진출</li>
+                </ul>
+                <ul>
+                  <p>Q3</p>
+                  <li>미국 시장 진출</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <img src="/image/roadmapBack.png" alt="roadmap Background" class="con7back">
         </section>
         <section id="content07" class="section">
           <div class="inner">
             <p class="title">Team & Partners</p>
             <div class="photoBox">
-              <div class="photoBox_inner">
-                
+              <div class="photoBox_inner slider">
+                <div class="profile">
+                  <div class="imgBox">
+                    <img src="/image/face06.jpg" alt="">
+                  </div>
+                  <p class="position">CEO</p>
+                  <p class="name"><span>조남섭</span> JO nam seob</p>
+                  <p class="major">서울대 경역학 전공</p>
+                </div>
+                <div class="profile">
+                  <div class="imgBox">
+                    <img src="/image/face05.jpg" alt="">
+                  </div>
+                  <p class="position">CEO</p>
+                  <p class="name"><span>박찬희</span> PARK chan hee</p>
+                  <p class="major">중앙대 컴퓨터공학 전공</p>
+                </div>
+                <div class="profile">
+                  <div class="imgBox">
+                    <img src="/image/face04.jpg" alt="">
+                  </div>
+                  <p class="position">CIO</p>
+                  <p class="name"><span>김시영</span> KIM si young</p>
+                  <p class="major">카이스트 재료공학 전공</p>
+                </div>
+                <div class="profile">
+                  <div class="imgBox">
+                    <img src="/image/face03.jpg" alt="">
+                  </div>
+                  <p class="position">CTO</p>
+                  <p class="name"><span>송명석</span> Mason SONG</p>
+                  <p class="major">서울대 컴퓨터공학 전공</p>
+                </div>
+                <div class="profile">
+                  <div class="imgBox">
+                    <img src="/image/face02.jpg" alt="">
+                  </div>
+                  <p class="position">CMO</p>
+                  <p class="name"><span>김동한</span> KIM dong han</p>
+                  <p class="major">청주대 경영정보학 전공</p>
+                </div>
+                <div class="profile">
+                  <div class="imgBox">
+                    <img src="/image/face01.jpg" alt="">
+                  </div>
+                  <p class="position">CSO</p>
+                  <p class="name"><span>김영민</span> KIM young min</p>
+                  <p class="major">명지대학교 물류시스템설계공학 전공</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <footer>
-          <div class="inner">
-            
-          </div>
-        </footer>
+        <div class="footer section fp-auto-height-responsive fp-auto-height">
+            <div class="inner">
+              <div class="imgBox">
+                <img src="/image/pivn_logo-noncolor.png" alt="PIVN logo">
+              </div>
+              <p>Contact : help@homenumber.co.kr</p>
+              <div class="iconBox">
+                <div class="icon">
+                  <a href="#">
+                    <img src="/image/icon-medium.png" alt="">
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#">
+                    <img src="/image/icon-telegram.png" alt="">
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#">
+                    <img src="/image/icon-twitter.svg" alt="">
+                  </a>
+                </div>
+                <div class="icon">
+                  <a href="#">
+                    <img src="/image/icon-discord.svg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script type="text/javascript" src="/plugin/fullpage.min.js"></script>
+  <script type="text/javascript" src="/plugin/fullpage.js"></script>
   <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-engine"></script>
   <script src="/particles02.js"></script>
@@ -205,16 +284,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery-particles"></script>
   <script src="/particles.js"></script>
   <script src="/plugin/slick.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        //options here
-        autoScrolling:true,
-        scrollHorizontally: true
-      });
-
-      //methods
-    });
-  </script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="/index.js"></script>
 </body>
 </html>
