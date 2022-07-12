@@ -2,11 +2,12 @@
 .splitting .word,
 .splitting .char {
   display: inline-block;
+  transform-style: preserve-3d;
 }
 
 /* Psuedo-element chars */
 .splitting .char {
-  position: relative;
+  /* position: relative; */
 }
 
 /**

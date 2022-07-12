@@ -147,7 +147,7 @@ a, a:active, a:visited {
 }
 
 * {
-  font-family: "Pretendard" !important;
+  font-family: "Pretendard";
   box-sizing: border-box;
   user-select: none;
   word-break: keep-all;
@@ -155,6 +155,7 @@ a, a:active, a:visited {
 }
 html {
   font-size: 62.5%;
+  font-family: "Pretendard";
 }
 @media (max-width: 1366px) {
   html {
