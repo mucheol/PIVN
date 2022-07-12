@@ -390,19 +390,19 @@ section {
   background-color: #b71b1b14;
   animation: animate 5s linear infinite;
 }
-#content03.active #inner.p01 .loader {
+#content03 #inner.p01 .loader {
   background-color: #78c5ff2c;
 }
-#content03.active #inner.p02 .loader {
+#content03 #inner.p02 .loader {
   background-color: #c600b22f;
 }
-#content03.active #inner.p03 .loader {
+#content03 #inner.p03 .loader {
   background-color: #005a9f38;
 }
-#content03.active #inner.p04 .loader {
+#content03 #inner.p04 .loader {
   background-color: #5d009f2b;
 }
-#content03.active #inner.p05 .loader {
+#content03 #inner.p05 .loader {
   background-color: #fbba6025;
 }
 @keyframes animate {
@@ -426,19 +426,19 @@ section {
   border-top-left-radius: 400px;
   border-bottom-left-radius: 400px;
 }
-#content03.active #inner.p01 .loader::before {
+#content03 #inner.p01 .loader::before {
   background: linear-gradient(to top, transparent, #78c4ff);
 }
-#content03.active #inner.p02 .loader::before {
+#content03 #inner.p02 .loader::before {
   background: linear-gradient(to top, transparent, #c600b1);
 }
-#content03.active #inner.p03 .loader::before {
+#content03 #inner.p03 .loader::before {
   background: linear-gradient(to top, transparent, #005a9f);
 }
-#content03.active #inner.p04 .loader::before {
+#content03 #inner.p04 .loader::before {
   background: linear-gradient(to top, transparent, #5e009f);
 }
-#content03.active #inner.p05 .loader::before {
+#content03 #inner.p05 .loader::before {
   background: linear-gradient(to top, transparent, #fbbb60);
 }
 #content03 .loader::after {
@@ -466,7 +466,7 @@ section {
   0 0 120px #ff0000,
   0 0 130px #ff0000;
 }
-#content03.active #inner.p01 .loader::after {
+#content03 #inner.p01 .loader::after {
   background-color: #a0d6ff;
   box-shadow: 0 0 10px #78c4ff,
   0 0 20px #78c4ff,
@@ -482,7 +482,7 @@ section {
   0 0 120px #78c4ff,
   0 0 130px #78c4ff;
 }
-#content03.active #inner.p02 .loader::after {
+#content03 #inner.p02 .loader::after {
   background-color: #e029ce;
   box-shadow: 0 0 10px #c600b1,
   0 0 20px #c600b1,
@@ -498,7 +498,7 @@ section {
   0 0 120px #c600b1,
   0 0 130px #c600b1;
 }
-#content03.active #inner.p03 .loader::after {
+#content03 #inner.p03 .loader::after {
   background-color: #3992d7;
   box-shadow: 0 0 10px #005a9f,
   0 0 20px #005a9f,
@@ -514,7 +514,7 @@ section {
   0 0 120px #005a9f,
   0 0 130px #005a9f;
 }
-#content03.active #inner.p04 .loader::after {
+#content03 #inner.p04 .loader::after {
   background-color: #8e30d2;
   box-shadow: 0 0 10px #5e009f,
   0 0 20px #5e009f,
@@ -530,7 +530,7 @@ section {
   0 0 120px #5e009f,
   0 0 130px #5e009f;
 }
-#content03.active #inner.p05 .loader::after {
+#content03 #inner.p05 .loader::after {
   background-color: #fecf8c;
   box-shadow: 0 0 10px #fbbb60,
   0 0 20px #fbbb60,
