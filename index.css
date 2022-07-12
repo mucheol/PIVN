@@ -109,6 +109,9 @@ nav ul li a:visited {
   color: #fff;
   font-size: 1.8rem;
 }
+nav ul li a:hover {
+  color: #f0a707;
+}
 .langBox {
   position: absolute;
   right: 80px;
@@ -188,6 +191,11 @@ section {
 #content01 .textBox span {
   font-size: 4rem;
   font-weight: bold;
+  opacity: 0;
+}
+#content01.active .textBox span {
+  animation: slideUp .5s linear forwards;
+  animation-delay: 2.5s;
 }
 #content01 .imgBox_inner {
   position: relative;
@@ -203,8 +211,10 @@ section {
   font-weight: 900;
   letter-spacing: 7px;
   text-shadow: 0 0 10px #b71b1b,
-    0 0 15px #b71b1b,
-    0 0 20px #b71b1b;
+  0 0 15px #b71b1b,
+  0 0 20px #b71b1b;
+}
+#content01.active .imgBox_inner p {
   opacity: 0;
   animation: fadein 1s linear forwards;
   animation-delay: 2s;
@@ -226,17 +236,17 @@ section {
   width: 45rem;
   display: flex;
 }
-.pivnBox img {
+#content01.active .pivnBox img {
   animation: fadein 1s linear forwards;
   opacity: 0;
 }
-.pivnBox img:nth-child(2) {
+#content01.active .pivnBox img:nth-child(2) {
   animation-delay: .5s;
 }
-.pivnBox img:nth-child(3) {
+#content01.active .pivnBox img:nth-child(3) {
   animation-delay: 1s;
 }
-.pivnBox img:nth-child(4) {
+#content01.active .pivnBox img:nth-child(4) {
   animation-delay: 1.5s;
 }
 @keyframes fadein {
@@ -676,14 +686,49 @@ section {
   position: relative;
   padding-top: 40px;
 }
-.content04Back {
+.content04Back01 {
   position: absolute;
   top: 150px;
-  width: 100vw;
+  right: 0;
+  width: 50vw;
   height: 500px;
-  background-image: url("/image/economyBack.png");
+  background-image: url("/image/economyBack01.png");
   background-position-x: center;
   background-repeat: no-repeat;
+  z-index: -1;
+}
+#content04.active .content04Back01 {
+  animation: right2left 1s linear forwards;
+}
+@keyframes right2left {
+  from {
+    right: -50vw;
+  }
+  to {
+    right: 0;
+  }
+}
+.content04Back02 {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 50vw;
+  height: 500px;
+  background-image: url("/image/economyBack02.png");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+#content04.active .content04Back02 {
+  animation: left2right 1s linear forwards;
+}
+@keyframes left2right {
+  from {
+    left: -50vw;
+  }
+  to {
+    left: 0;
+  }
 }
 #content04 .inner {
   display: flex;
@@ -704,10 +749,28 @@ section {
   perspective: 10px;
   width: 45rem;
   filter: drop-shadow(5px 0px 20px rgba(0, 0, 0, 1));
-  animation: zerogravity2 3s linear infinite;
-  animation-delay: .5s;
+  /* animation: zerogravity2 3s linear infinite; */
+  /* animation-delay: .5s; */
 }
-@keyframes zerogravity2 {
+#content04.active .leftBox img:nth-child(2) {
+  animation: slideUpC2 1s linear forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+@keyframes slideUpC2 {
+  0% {
+    opacity: 0;
+    top: 70%;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    top: 64%;
+  }
+}
+/* @keyframes zerogravity2 {
   0% {
     transform: translate(-50%,-50%) rotateX(17deg) rotateZ(13deg);
   }
@@ -717,7 +780,7 @@ section {
   100% {
     transform: translate(-50%,-50%) rotateX(17deg) rotateZ(13deg);
   }
-}
+} */
 #content04 .leftBox img:nth-child(1) {
   position: absolute;
   top: 42%;
@@ -726,9 +789,14 @@ section {
   perspective: 10px;
   width: 40rem;
   filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.255));
-  animation: zerogravity1 3s linear infinite;
+  /* animation: zerogravity1 3s linear infinite; */
 }
-@keyframes zerogravity1 {
+#content04.active .leftBox img:nth-child(1) {
+  animation: slideUpC1 1s linear forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+/* @keyframes zerogravity1 {
   0% {
     transform: translate(-50%,-50%) rotateX(3deg) rotateZ(344deg);
   }
@@ -737,6 +805,16 @@ section {
   }
   100% {
     transform: translate(-50%,-50%) rotateX(3deg) rotateZ(344deg);
+  }
+} */
+@keyframes slideUpC1 {
+  from {
+    opacity: 0;
+    top: 48%;
+  }
+  to {
+    opacity: 1;
+    top: 42%;
   }
 }
 #content04 .rightBox {
@@ -748,6 +826,11 @@ section {
 }
 #content04 .rightBox .title {
   font-size: 2.4rem;
+  opacity: 0;
+}
+#content04.active .rightBox .title {
+  animation: slideUp .5s linear forwards;
+  animation-delay: 2.2s;
 }
 #content04 .rightBox .subTitle {
   position: relative;
@@ -755,13 +838,50 @@ section {
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 4rem;
+  opacity: 0;
+}
+#content04.active .rightBox .subTitle {
+  animation: slideUp .5s linear forwards;
+  animation-delay: 2.4s;
 }
 #content04 .rightBox .subTitle span{
-  border-bottom: 2px solid #b71b1b;
+  position: relative;
 }
-#content04 .rightBox .des {
+#content04 .rightBox .subTitle span::after{
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #b71b1b;
+}
+#content04.active .rightBox .des p{
   font-size: 1.8rem;
   line-height: 26px;
+  opacity: 0;
+}
+#content04.active .rightBox .des p:nth-child(1){
+  animation: slideUp2 .5s linear forwards;
+  animation-delay: 2.8s;
+}
+#content04.active .rightBox .des p:nth-child(2){
+  animation: slideUp2 .5s linear forwards;
+  animation-delay: 3s;
+}
+#content04.active .rightBox .des p:nth-child(3){
+  animation: slideUp2 .5s linear forwards;
+  animation-delay: 3.2s;
+}
+@keyframes slideUp2 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 /* content05 */
 #content05 .inner {
@@ -790,6 +910,11 @@ section {
   width: 987px;
   height: auto;
   margin-top: 50px;
+  opacity: 0;
+}
+#content05.active .graph {
+  animation: slideUp 1s linear forwards;
+  animation-delay: .5s;
 }
 #content05 .graph .economy{
   width: 100%;
@@ -801,6 +926,19 @@ section {
   line-height: 26px;
   text-align: center;
   color: #fff;
+}
+#content05.active .des p {
+  animation: slideUp2 .5s linear forwards;
+  opacity: 0;
+}
+#content05.active .des p:nth-child(1) {
+  animation-delay: 1.5s;
+}
+#content05.active .des p:nth-child(2) {
+  animation-delay: 1.7s;
+}
+#content05.active .des p:nth-child(3) {
+  animation-delay: 1.9s;
 }
 
 /* content06 */
