@@ -957,15 +957,17 @@ section {
   position: relative;
   align-items: center;
   margin: 0 auto;
+  width: 100vw;
 }
 #content06 .loadBox01 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   text-align: end;
   margin-top: 60px;
+  margin-right: 950px;
 }
 #content06 .loadBox01 p{
   text-align: end;
@@ -980,13 +982,35 @@ section {
 #content06 .loadBox01 p:nth-child(2) {
   font-size: 3.4rem;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 10px;
+  margin-bottom: -30px;
 }
-#content06 .roadLine::before {
+#content06 .roadLine {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  display: block;
+  width: 0;
+  background-color: #b71b1b;
+  height: 1px;
+}
+#content06.active .roadLine {
+  animation: roadLine 1s linear forwards;
+  animation-delay: .5s;
+}
+@keyframes roadLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100vw;
+  }
+}
+/* #content06 .roadLine::before {
   content: "";
   position: absolute;
   top: 210px;
-  right: 300px;
+  right: -5000px;
   display: block;
   width: 30000px;
   height: 1px;
@@ -1001,20 +1025,30 @@ section {
   width: 330px;
   height: 1px;
   background-color: #b71b1b;
-}
+} */
 #content06 .roadDot,
 #content06 .roadDot02 {
   display: block;
   position: absolute;
-  top: 204px;
+  top: 173px;
   left: calc(50% - 365px);
   width: 15px;
   height: 15px;
   background-color: #b71b1b;
   border-radius: 50%;
+  opacity: 0;
 }
+#content06.active .roadDot,
+#content06.active .roadDot02 {
+  animation: fadein .3s linear forwards;
+  animation-delay: 1.5s;
+}
+
 #content06 .roadDot02 {
   left: calc(50% + 270px);
+}
+#content06.active .roadDot02 {
+  animation-delay: 2.6s;
 }
 #content06 .loadBox {
   display: flex;
@@ -1032,9 +1066,18 @@ section {
   font-size: 2.5rem;
   color: #b71b1b;
   margin-bottom: -20px;
+  opacity: 0;
+}
+#content06.active .loadBox02 .year {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 1.7s;
+}
+#content06.active .loadBox03 .year {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 2.7s;
 }
 #content06 ul {
- margin-top: 50px; 
+  margin-top: 50px; 
 }
 #content06 ul p,
 #content06 ul li {
@@ -1043,11 +1086,48 @@ section {
   color: #fff;
   list-style: disc;
 }
-#content06 ul li {
-  margin-left: 20px;
-}
 #content06 ul p {
   margin-bottom: 10px;
+  opacity: 0;
+}
+#content06 ul li {
+  margin-left: 20px;
+  opacity: 0;
+}
+#content06.active .loadBox02 ul:nth-child(2) p,
+#content06.active .loadBox02 ul:nth-child(2) li {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 1.9s;
+}
+#content06.active .loadBox02 ul:nth-child(3) p,
+#content06.active .loadBox02 ul:nth-child(3) li {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 2.1s;
+}
+#content06.active .loadBox02 ul:nth-child(4) p,
+#content06.active .loadBox02 ul:nth-child(4) li {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 2.3s;
+}
+#content06.active .loadBox02 ul:nth-child(5) p,
+#content06.active .loadBox02 ul:nth-child(5) li {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 2.5s;
+}
+#content06.active .loadBox03 ul:nth-child(2) p,
+#content06.active .loadBox03 ul:nth-child(2) li {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 2.9s;
+}
+#content06.active .loadBox03 ul:nth-child(3) p,
+#content06.active .loadBox03 ul:nth-child(3) li {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 3.1s;
+}
+#content06.active .loadBox03 ul:nth-child(4) p,
+#content06.active .loadBox03 ul:nth-child(4) li {
+  animation: slideUp2 .4s linear forwards;
+  animation-delay: 3.3s;
 }
 
 /* content07 */
