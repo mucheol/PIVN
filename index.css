@@ -1169,13 +1169,13 @@ section {
   justify-content: center;
   align-items: center;
   border: 1px solid #b71b1b;
-  padding: 75px 0 55px;
-  border-radius: 33px;
+  padding: 6rem 0 5.5rem;
+  border-radius: 4rem;
   margin: 0 16px;
 }
 #content07 .photoBox .profiles .imgBox {
-  width: 200px;
-  height: 190px;
+  width: 156px;
+  height: 145px;
   border-radius: 33px;
   overflow: hidden;
 }
@@ -1354,9 +1354,6 @@ section {
     margin: 23px 0;
     padding: 0;
   }
-  .header_inner nav ul li a:hover {
-    color: #b71b1b;
-  }
   .langBox {
     right: 120px;
   }
@@ -1398,7 +1395,7 @@ section {
     height: 125px;
   }
   #content01 .imgBox_inner p {
-    font-size: 161px;
+    font-size: 150px;
   }
   #content01 .imgBox_inner span {
     width: 80px;
@@ -1406,10 +1403,14 @@ section {
   #content01 .textBox p {
     margin-top: 30px;
   }
+  .pivnBox {
+    width: 41rem;
+    height: 13rem;
+  }
 
   /* M_CONTENT02 */
   #content02 .imgBox {
-    width: 800px;
+    width: 600px;
     height: 250px;
   }
   #content02 .textBox {
@@ -1421,14 +1422,17 @@ section {
 
   /* M_CONTENT03 */
   #content03 .container {
-    width: 600px;
+    width: 530px;
   }
   #content03 .loader {
-    width: 600px;
-    height: 600px;
+    width: 530px;
+    height: 530px;
   }
   #content03 .textBox {
-    width: 600px;
+    width: 530px;
+  }
+  #content03 .content_des {
+    font-size: 3rem;
   }
   #content03 .subTextBox {
     width: auto;
@@ -1438,6 +1442,21 @@ section {
     left: 255px;
     width: 1102px;
     height: 98%;
+  }
+  #content03 .subTextBox p:nth-child(1) {
+    margin-left: 13rem;
+  }
+  #content03 .subTextBox p:nth-child(2) {
+    margin-left: 20.3rem;
+  }
+  #content03 .subTextBox p:nth-child(3) {
+    margin-left: 21rem;
+  }
+  #content03 .subTextBox p:nth-child(4) {
+    margin-left: 16.5rem;
+  }
+  #content03 .subTextBox p:nth-child(5) {
+    margin-left: 6.5rem;
   }
 
   /* M_CONTENT04 */
@@ -1463,26 +1482,26 @@ section {
   }
 
   /* M_CONTENT06 */
+  #content06 .loadBox01 { 
+    margin-top: 10px;
+  }
   #content06 .loadBox01 p:nth-child(2) {
     margin-top: 18px;
   }
-  #content06 .roadLine::before {
-    top: 180px;
-  }
-  #content06 .roadLine::after {
-    top: 180px;
+  #content06 .roadLine {
+    top: 131px;
   }
   #content06 .roadDot, #content06 .roadDot02 {
-    top: 174px;
+    top: 124px;
   }
   #content06 .loadBox {
-    margin-top: 50px;
+    margin-top: 80px;
   }
   #content06 .year {
     margin-bottom: 0px;
   }
   #content06 ul {
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   /* M_CONTENT07 */
