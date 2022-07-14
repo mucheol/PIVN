@@ -191,6 +191,7 @@ section {
 #content01 .textBox span {
   font-size: 4rem;
   font-weight: bold;
+  text-shadow: 1px 2px 3px #000;
   opacity: 0;
 }
 #content01.active .textBox span {
@@ -376,16 +377,17 @@ section {
 }
 #content03 .container {
   position: relative;
-  width: 800px;
+  width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
   -webkit-box-reflect: below 1px linear-gradient(#0001, #0004);
+  overflow: hidden;
 }
 #content03 .loader {
   position: relative;
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   background-color: #b71b1b14;
   animation: animate 5s linear infinite;
@@ -421,7 +423,7 @@ section {
   width: 50%;
   height: 100%;
   background: linear-gradient(to top, transparent, #b71b1b);
-  background-size: 400px 720px;
+  background-size: 350px 630px;
   background-repeat: no-repeat;
   border-top-left-radius: 400px;
   border-bottom-left-radius: 400px;
@@ -563,7 +565,7 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 800px;
+  width: 700px;
 }
 #content03 .title {
   font-size: 2.4rem;
@@ -1055,14 +1057,19 @@ section {
   margin-top: 85px;
 }
 #content06 .loadBox02 {
+  position: relative;
   width: 450px;
-  margin-left: 200px;
+  margin-left: 410px;
 }
 #content06 .loadBox03 {
+  position: relative;
   width: 340px;
   margin-left: 185px;
 }
 #content06 .year {
+  position: absolute;
+  top: 0;
+  left: -100px;
   font-size: 2.5rem;
   color: #b71b1b;
   margin-bottom: -20px;
@@ -1086,8 +1093,12 @@ section {
   color: #fff;
   list-style: disc;
 }
+#content06 .loadBox ul:nth-child(2) {
+  margin-top: 5px;
+}
 #content06 ul p {
   margin-bottom: 10px;
+  color: #b71b1b;
   opacity: 0;
 }
 #content06 ul li {
@@ -1520,9 +1531,9 @@ section {
     padding: 45px 0 35px;
   }
   #content07 .photoBox .profiles .imgBox {
-    width: 180px;
-    height: 165px;
-    border-radius: 25px;
+    width: 150px;
+    height: 138px;
+    border-radius: 20px;
   }
   .footer {
     width: 100vw;
