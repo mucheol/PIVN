@@ -12,9 +12,6 @@ $(window).on('load', ()=>{
 })
 
 $(document).ready(function(){
-  // new fullpage('#fullpage', {
-    
-  // });
   $('#fullpage').fullpage({
     //options here
     anchors: ['section01', 'section02', 'section03', 'section04', 'section05', 'section06', 'section07'],
@@ -25,35 +22,35 @@ $(document).ready(function(){
     dragAndMove : true
   });
 
-  $('#content03').hover(function(){
-  $('.subTextBox p').hover(function(){
-    const img = document.querySelector('.backImg');
-    $(this).siblings().removeClass('active');
-    $(this).addClass('active');
-    if($(this).hasClass('sTBp01')){
-      $('#content03 #inner').removeClass();
-      $('#content03 #inner').addClass('p01');
-    }
-    else if($(this).hasClass('sTBp02')){
-      $('#content03 #inner').removeClass();
-      $('#content03 #inner').addClass('p02');
-    }
-    else if($(this).hasClass('sTBp03')){
-      $('#content03 #inner').removeClass();
-      $('#content03 #inner').addClass('p03');
-    }
-    else if($(this).hasClass('sTBp04')){
-      $('#content03 #inner').removeClass();
-      $('#content03 #inner').addClass('p04');
-    }
-    else if($(this).hasClass('sTBp05')){
-      $('#content03 #inner').removeClass();
-      $('#content03 #inner').addClass('p05');
-    }else {
-      $('#content03 #inner').removeClass();
-      
-    }
-  });
+$('#content03').hover(function(){
+$('.subTextBox p').hover(function(){
+  const img = document.querySelector('.backImg');
+  $(this).siblings().removeClass('active');
+  $(this).addClass('active');
+  if($(this).hasClass('sTBp01')){
+    $('#content03 #inner').removeClass();
+    $('#content03 #inner').addClass('p01');
+  }
+  else if($(this).hasClass('sTBp02')){
+    $('#content03 #inner').removeClass();
+    $('#content03 #inner').addClass('p02');
+  }
+  else if($(this).hasClass('sTBp03')){
+    $('#content03 #inner').removeClass();
+    $('#content03 #inner').addClass('p03');
+  }
+  else if($(this).hasClass('sTBp04')){
+    $('#content03 #inner').removeClass();
+    $('#content03 #inner').addClass('p04');
+  }
+  else if($(this).hasClass('sTBp05')){
+    $('#content03 #inner').removeClass();
+    $('#content03 #inner').addClass('p05');
+  }else {
+    $('#content03 #inner').removeClass();
+    
+  }
+});
 },function(){
   $('.subTextBox p').siblings().removeClass('active');
   $('#content03 #inner').removeClass();
@@ -87,5 +84,19 @@ $(document).ready(function(){
     $('.header_inner nav').toggleClass('active');
     $('.m_hamburger').toggleClass('active');
   });
+
+  // 모바일 RoadMap
+  $('#y2022').on('click',function(){
+    $('.m_inner .loadBox03').css({'display':'none'})
+    $('.m_inner .loadBox02').css({'display':'block'})
+    $(this).css({'color':'#b71b1b'})
+    $('#y2023').css({'color':'#fff'})
+  })
+  $('#y2023').on('click',function(){
+    $('.m_inner .loadBox02').css({'display':'none'})
+    $('.m_inner .loadBox03').css({'display':'block'})
+    $(this).css({'color':'#b71b1b'})
+    $('#y2022').css({'color':'#fff'})
+  })
 
 });

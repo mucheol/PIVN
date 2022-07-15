@@ -1,0 +1,106 @@
+
+.langBox a:nth-child(2)::after {
+  display: none;
+}
+
+#content02 .textBox {
+  text-align: center;
+}
+#content02 .textBox p {
+  display: flex;
+  align-items: center;
+}
+#content04 .rightBox {
+  width: 650px;
+}
+#content05.active .des p:nth-child(4) {
+  animation-delay: 2.1s;
+}
+#content05 .des {
+  margin-top: 10px;
+}
+#content06 .loadBox02 {
+  width: 505px;
+}
+#content06 .loadBox03 {
+  margin-left: 130px;
+
+}
+#content06 .loadBox02 ul:nth-child(5) li {
+  width: 510px;
+}
+#content07 .photoBox .profiles .name {
+  font-size: 2rem;
+}
+#content07 .photoBox .profiles .major {
+  width: 80%;
+  text-align: center;
+  line-height: 2.3rem;
+}
+
+@media (max-width: 375px) {
+  #content03 .subTextBox p {
+    width: 130px;
+  }
+  #content03 .subTextBox p:nth-child(3) {
+    margin-left: 18rem;
+  }
+  #content04 .rightBox {
+    width: 100%;
+  }
+  #content04 .m_des {
+    width: 300px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+  #content04.active .m_des {
+    animation: slideUp2 .5s linear forwards;
+    animation-delay: 2.8s;
+  }
+  #content04 .m_des p {
+    font-size: 13px;
+  }  
+  #content05 .graph img {
+    width: 90%;
+    margin: 20px 0;
+  }
+  #content05 .m_des p {
+    font-size: 14px;
+  }
+  #content06 .m_inner {
+    padding-top: 0;
+  }
+  #content06 .yearBox {
+    top: 146px;
+  }
+  #content06 .roadLine {
+    top: 180px;
+  }
+  #content06 .loadBox {
+    margin-top: 70px;
+  }
+  #content06 .loadBox02,
+  #content06 .loadBox03 {
+    width: 94%;
+  }
+  #content06 ul {
+    margin-top: 10px;
+  }
+  #content06 .loadBox ul:nth-child(1) {
+    margin-top: 20px;
+}
+  #content06 .loadBox ul:nth-child(2) {
+    margin-top: 10px;
+  }
+  #content06 ul p, 
+  #content06 ul li {
+    line-height: 18px;
+  }
+  #content06 ul li {
+    list-style: none;
+    margin-left: 0;
+  }
+  #content06 .loadBox03 {
+    margin-left: 0px;
+}
+}

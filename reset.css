@@ -162,3 +162,8 @@ html {
     font-size: 56.25%;
   }
 }
+@media (max-width: 375px) {
+  html {
+    font-size: 31.25%;
+  }
+}
