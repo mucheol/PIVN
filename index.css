@@ -1674,6 +1674,9 @@ section {
   #content01 .textBox p {
     margin-top: 20px;
   }
+  #content01 .textBox span {
+    font-size: 22px;
+  }
 
   /* M_CONTENT02 */
   #content02 .inner {
@@ -1699,6 +1702,7 @@ section {
   }
   #content02 .textBox p {
     margin: 1.5vh 4vw;
+    font-size: 14px;
   }
   #content02 .backTextBox {
     position: relative;
@@ -1770,7 +1774,7 @@ section {
 }
   #content03 .textBox {
     width: 160px;
-    margin-left: 180px;
+    margin-left: 190px;
     align-items: baseline;
   }
   #content03 .title {
