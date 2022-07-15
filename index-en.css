@@ -50,7 +50,7 @@
   }
 
 }
-@media (max-width: 376px) {
+@media (max-width: 480px) {
   #content03 .subTextBox p {
     width: 130px;
   }
