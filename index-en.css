@@ -38,7 +38,19 @@
   line-height: 2.3rem;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1366px) {
+  #content06 .roadDot{
+    left: calc(50% - 435px);
+  }
+  #content06 .roadDot02 {
+    left: calc(50% + 198px);
+}
+  #content06 .loadBox02 {
+    margin-left: 265px;
+  }
+
+}
+@media (max-width: 376px) {
   #content03 .subTextBox p {
     width: 130px;
   }
@@ -82,6 +94,9 @@
   #content06 .loadBox02,
   #content06 .loadBox03 {
     width: 94%;
+  }
+  #content06 .loadBox02 {
+    margin-left: 0px;
   }
   #content06 ul {
     margin-top: 10px;

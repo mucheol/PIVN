@@ -938,11 +938,12 @@ section {
   line-height: 26px;
   text-align: center;
   color: #fff;
+}
+#content05 .des p {
   opacity: 0;
 }
 #content05.active .des p {
   animation: slideUp2 .5s linear forwards;
-  opacity: 0;
 }
 #content05.active .des p:nth-child(1) {
   animation-delay: 1.5s;
@@ -1576,7 +1577,7 @@ section {
   }
 }
 
-@media (max-width: 375px) {  /* @@@@@@@@@@@@@@@@@@@@@@@@ */
+@media (max-width: 376px) {  /* @@@@@@@@@@@@@@@@@@@@@@@@ */
   .onlyM {
     display: block;
   }
@@ -1713,7 +1714,7 @@ section {
   }
   #content02.active .backTextBox p:nth-child(1) {
     animation: moveLeft 20s linear infinite;
-    animation-delay: 3s;
+    animation-delay: 2s;
   }
   @keyframes moveLeft {
     from {
@@ -1729,7 +1730,7 @@ section {
   }
   #content02.active .backTextBox p:nth-child(2) {
     animation: moveRight 20s linear infinite;
-    animation-delay: 3s;
+    animation-delay: 2s;
   }
   @keyframes moveRight {
     from {
