@@ -185,6 +185,9 @@ section {
   align-items: center;
   width: 50%;
 }
+#content01 .textBox {
+  width: 60%;
+}
 #content01 .textBox p {
   color: #fff;
   font-size: 3rem;
@@ -267,6 +270,9 @@ section {
   position: relative;
   width: 100vw;
   height: 100vh;
+}
+.fp-overflow{
+  overflow-y: hidden !important;
 }
 #particles-js {
   position: absolute;
@@ -1433,6 +1439,7 @@ section {
     width: 41rem;
     height: 13rem;
   }
+  
 
   /* L_CONTENT02 */
   #content02 .imgBox {
@@ -1653,7 +1660,7 @@ section {
 
   /* COMMON */
   .inner {
-    width: 91vw;
+    width: 327px;
     padding-top: 15px;
   }
 
@@ -1675,9 +1682,33 @@ section {
     margin-top: 20px;
   }
   #content01 .textBox span {
-    font-size: 22px;
+    font-size: 20px;
   }
-
+  .pivnBox {
+    height: 86px;
+    place-content: center;
+  }
+  #content01 .pivnBox {
+    display: none;
+  }
+  #content01 .m_pivnBox {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-content: center;
+    opacity: 0;
+  }
+  #content01.active .m_pivnBox {
+    animation: fadein 1s linear forwards;
+    animation-delay: .5;
+  }
+  #content01 .m_pivnBox img {
+    width: 80%;
+  }
+  #content01.active .textBox span {
+    animation: slideUp 1s linear forwards;
+    animation-delay: 1.2s;
+}
   /* M_CONTENT02 */
   #content02 .inner {
     height: 100vh;
@@ -1691,6 +1722,8 @@ section {
   }
   #content02 .content_des {
     font-size: 16px;
+    text-align: center;
+    width: 330px;
   }
   #content02 .imgBox {
     width: 90%;
@@ -1897,6 +1930,7 @@ section {
     text-align: center;
     margin-top: 0px;
     margin-right: 0;
+    height: 100px;
 }
   #content06 .loadBox01 p {
     text-align: center;
@@ -1909,18 +1943,19 @@ section {
     margin-top: 0;
   }
   #content06 .roadLine {
-    top: 200px;
+    position: relative;
+    top: 0;
     width: 84vw;
-    margin-left: 8vw;
+    margin-left: 0;
+
   }
   #content06.active .roadLine {
     animation: none;
   }
   #content06 .yearBox {
     display: flex;
-    position: absolute;
-    top: 165px;
-    left: 30px;
+    position: relative;
+    margin-left: 9vw;
   }
   #content06 .roadDot {
     position: relative;
@@ -1951,6 +1986,7 @@ section {
   #content06 .loadBox {
     width: 100%;
     margin-left: 30px;
+    margin-top: 0;
   }
   #content06 .loadBox02 {
     margin-left: 0px;
@@ -2005,10 +2041,19 @@ section {
     animation-delay: 0.6s;
   }
   #content06 .loadBox ul:nth-child(1) {
-    margin-top: 30px;
+    margin-top: 10px;
   }
-  #content06 .loadBox ul:nth-child(2) {
-    margin-top: 20px;
+  #content06 ul {
+    margin-top: 10px;
+  }
+  #content06 .loadBox03 ul:nth-child(1) {
+    margin-top: 15px;
+}
+  #content06 .loadBox03 ul:nth-child(2) {
+    margin-top: 15px;
+}
+  #content06 .loadBox03 ul {
+    margin-top: 15px;
   }
 
   /* M_CONTENT07 */
