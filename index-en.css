@@ -6,10 +6,6 @@
 #content02 .textBox {
   text-align: center;
 }
-#content02 .textBox p {
-  display: flex;
-  align-items: center;
-}
 #content04 .rightBox {
   width: 650px;
 }
@@ -83,13 +79,10 @@
     padding-top: 0;
   }
   #content06 .yearBox {
-    top: 146px;
+    width: 100%;
   }
-  #content06 .roadLine {
-    top: 180px;
-  }
-  #content06 .loadBox {
-    margin-top: 70px;
+  #content06 .roadDot {
+    left: 0;
   }
   #content06 .loadBox02,
   #content06 .loadBox03 {
