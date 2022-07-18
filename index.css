@@ -1704,10 +1704,9 @@ section {
     display: none;
   }
   #content01 .m_pivnBox {
-    display: flex;
     width: 90vw;
-    justify-content: center;
-    align-content: center;
+    height: auto;
+    text-align: center;
     opacity: 0;
   }
   #content01.active .m_pivnBox {
@@ -1716,6 +1715,7 @@ section {
   }
   #content01 .m_pivnBox img {
     width: 80%;
+    height: auto;
   }
   #content01.active .textBox span {
     animation: slideUp 1s linear forwards;
