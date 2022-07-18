@@ -118,6 +118,9 @@
   font-size: 14px;
   line-height: 16px;
   width: 230px;
-
+}
+#content07 .photoBox .profiles .position {
+  font-size: 22px;
+  margin-top: 15px;
 }
 }

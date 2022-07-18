@@ -1962,6 +1962,7 @@ section {
     display: flex;
     position: relative;
     margin-left: 9vw;
+    width: 100%;
   }
   #content06 .roadDot {
     position: relative;
@@ -2063,14 +2064,24 @@ section {
   }
 
   /* M_CONTENT07 */
+  #content07 .photoBox .profiles {
+    height: 358px;
+  }
+  #content07 .photoBox .profiles .position {
+    font-size: 22px;
+    margin-top: 15px;
+  }
   #content07 .photoBox .profiles .name {
+    font-size: 14px;
+  }
+  #content07 .photoBox .profiles .name span {
     font-size: 16px;
   }
   #content07 .photoBox .profiles .major {
     font-size: 14px;
     line-height: 16px;
     width: 230px;
-
+    text-align: center;
   }
   .footer .imgBox {
   width: 95px;
