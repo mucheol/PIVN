@@ -330,13 +330,16 @@ section {
   width: 100%;
 }
 #content02 .imgBox img:nth-child(2) {
+  width: 100%;
+}
+#content02 .imgBox img:nth-child(3) {
   position: absolute;
   width: 40%;
 }
-#content02 .imgBox img:nth-child(2) {
+#content02 .imgBox img:nth-child(3) {
   opacity: 0;
 }
-#content02.active .imgBox img:nth-child(2) {
+#content02.active .imgBox img:nth-child(3) {
   animation: slideUp .5s linear forwards;
   animation-delay: 1.5s;
 }
@@ -1729,6 +1732,9 @@ section {
     width: 90%;
     height: auto;
   }
+  #content02 .imgBox img:nth-child(1) {
+    display: none;
+  }
   #content02 .textBox {
     flex-wrap: wrap;
     margin-top: 10vh;
@@ -1743,7 +1749,7 @@ section {
   }
   #content02 .backTextBox p {
     position: absolute;
-    color: #0f0f0f;
+    color: #3f3f3f;
     font-size: 60px;
     font-weight: bold;
   }
@@ -1924,7 +1930,7 @@ section {
     align-items: center;
     width: 91vw;
     margin: 0 auto;
-    padding-top: 15px;
+    padding-bottom: 50px;
   }
   #content06 .loadBox01 {
     text-align: center;
@@ -2057,6 +2063,15 @@ section {
   }
 
   /* M_CONTENT07 */
+  #content07 .photoBox .profiles .name {
+    font-size: 16px;
+  }
+  #content07 .photoBox .profiles .major {
+    font-size: 14px;
+    line-height: 16px;
+    width: 230px;
+
+  }
   .footer .imgBox {
   width: 95px;
   height: 45px;

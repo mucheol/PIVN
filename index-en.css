@@ -111,4 +111,13 @@
   #content06 .loadBox03 {
     margin-left: 0px;
 }
+#content07 .photoBox .profiles .name {
+  font-size: 14px;
+}
+#content07 .photoBox .profiles .major {
+  font-size: 14px;
+  line-height: 16px;
+  width: 230px;
+
+}
 }
