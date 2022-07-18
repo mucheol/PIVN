@@ -148,6 +148,9 @@ section {
 .onlyM {
   display: none;
 }
+.fillRed {
+  color: #b71b1b;
+}
 
 /* 콘텐츠 */
 /* CONTENT01 */
@@ -1097,6 +1100,7 @@ section {
   font-size: 2.5rem;
   color: #b71b1b;
   margin-bottom: -20px;
+  font-weight: bold;
   opacity: 0;
 }
 #content06.active .loadBox02 .year {
@@ -1128,6 +1132,7 @@ section {
 #content06 ul li {
   margin-left: 20px;
   opacity: 0;
+  font-weight: 100;
 }
 #content06.active .loadBox02 ul:nth-child(2) p,
 #content06.active .loadBox02 ul:nth-child(2) li {
@@ -1207,6 +1212,8 @@ section {
   padding: 6rem 0 5.5rem;
   border-radius: 4rem;
   margin: 0 16px;
+  
+  height: 454px;
 }
 #content07 .photoBox .profiles .imgBox {
   width: 156px;
@@ -1245,6 +1252,8 @@ section {
 #content07 .photoBox .profiles .major {
   font-size: 1.6rem;
   margin-top: 15px;
+  
+  text-align: center;
 }
 .slick-prev,
 .slick-next {
@@ -1557,7 +1566,7 @@ section {
 
   /* L_CONTENT07 */
   #content07 .title {
-    padding-top: 50px;
+    padding-bottom: 50px;
   }
   #content07 .photoBox {
     width: 900px;
@@ -2064,6 +2073,13 @@ section {
   }
 
   /* M_CONTENT07 */
+  #content07 .title {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  #content07 .photoBox {
+    height: 430px;
+  }
   #content07 .photoBox .profiles {
     height: 358px;
   }
