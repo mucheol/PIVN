@@ -1716,8 +1716,8 @@ section {
   .m_langBox a {
     position: relative;
   }
-  .m_langBox .m_langBox_inner a:nth-child(1) {
-    color: #f0a707;
+  .header_inner nav .m_langBox a:nth-child(1) {
+    color: #f0a707 !important;
   }
   .m_whitepaper {
     display: block;
@@ -1740,7 +1740,6 @@ section {
     font-weight: 300;
   }
   
-
   /* COMMON */
   .inner {
     width: 327px;
