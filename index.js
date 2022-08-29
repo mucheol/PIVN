@@ -22,6 +22,12 @@ $(document).ready(function(){
     dragAndMove : true
   });
 
+  $(".langMenu .title").click(function() {
+    $(this).next(".langMenu .item").stop().slideToggle(300);
+   $(this).toggleClass('on').siblings().removeClass('on');
+   $(this).next(".langMenu .item").siblings(".langMenu .item").slideUp(300); // 1개씩 펼치기
+ });
+
 $('#content03').hover(function(){
 $('.subTextBox p').hover(function(){
   const img = document.querySelector('.backImg');

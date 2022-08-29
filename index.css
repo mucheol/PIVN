@@ -101,7 +101,7 @@ nav ul {
 }
 nav ul li {
   padding: 0.8vw ;
-  margin: 0 1vw;
+  margin: 0 .5vw;
 }
 nav ul li a,
 nav ul li a:active, 
@@ -114,24 +114,68 @@ nav ul li a:hover {
 }
 .langBox {
   position: absolute;
-  right: 80px;
+  top: 10px;
+  right: 30px;
 }
 .langBox a {
   position: relative;
   color: #fff;
   font-size: 1.8rem;
-  margin-left: 10px;
 }
-.langBox a:nth-child(1)::after {
-  content: "";
+.langMenu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+.langMenu span {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.langMenu .title{
+  position: relative;
+  padding: 17px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+.langMenu .title:nth-child(3){
+  border-top: 1px solid #fff;
+}
+.langMenu .title.on>span{
+  font-weight: bold;
+}
+.langMenu .item {
+  display: none;
+  overflow: hidden;
+  font-size: 14px;
+  padding-bottom: 10px;
+  margin: 0 5px;
+  color: #fff;
+}
+.langMenu .title.on + .item {
+  display: flex !important;
+}
+.langMenu .item .horLine{
   display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: red;
+  width: 1px;
+  height: 18px;
+  background-color: #fff;
+  margin: 0 10px;
+}
+.langMenu .item .pic{
+  cursor: pointer;
+}
+.langMenu .item .colorY {
+  color: #f0a707;
+}
+.langMenu .item .pic:hover{
+  color: #f0a707;
+}
+.m_langBox {
+  display: none;
+}
+.m_whitepaper {
+  display: none;
 }
 
 /* 콘텐츠 공통 */
@@ -1400,6 +1444,16 @@ section {
   }
   .langBox {
     right: 120px;
+    top: 15px;
+  }
+  .langBox a {
+    font-size: 1.5rem;
+  }
+  .langMenu .title {
+    padding: 10px 0;
+  }
+  .langMenu span {
+    font-size: 1.5rem;
   }
   .m_hamburger {
     position: absolute;
@@ -1634,18 +1688,22 @@ section {
   }
   .header_inner nav {
     top: 55px;
+    padding: 48px 28px 48px 40px;
+  }
+  .header_inner nav ul {
+    border-top: 1px solid rgba(181, 181, 181, 0.668);
   }
   .header_inner nav ul li {
-    padding: 20px 0;
+    padding: 17px 0;
   }
   .header_inner nav ul li a{
-    padding: 20px 0;
+    padding: 17px 0;
     font-size: 14px;
   }
   .header_inner nav .m_langBox {
     position: absolute;
     right: 30px;
-    bottom: 30px;
+    top: 20px;
   }
   .header_inner nav .m_langBox a{
     color: #fff;
@@ -1658,17 +1716,30 @@ section {
   .m_langBox a {
     position: relative;
   }
-  .m_langBox a:nth-child(1)::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: red;
+  .m_langBox .m_langBox_inner a:nth-child(1) {
+    color: #f0a707;
   }
+  .m_whitepaper {
+    display: block;
+    padding-top: 20px;
+    border-top: 1px solid rgba(181, 181, 181, 0.668);
+  }
+  .m_whitepaper p{
+    color: #fff;
+    font-size: 14px;
+  }
+  .m_whitepaper p:nth-child(1){
+    font-weight: 700;
+  }
+  .m_whitepaper .lang{
+    display: flex;
+    margin-top: 15px;
+  }
+  .m_whitepaper .lang p{
+    margin-right:15px;
+    font-weight: 300;
+  }
+  
 
   /* COMMON */
   .inner {
