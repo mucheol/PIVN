@@ -1,3 +1,6 @@
+.iconPivn {
+  display: none;
+}
 body {
   font-family: "Pretendard";
   background-color: #000;
@@ -1738,6 +1741,9 @@ section {
   .m_whitepaper .lang p{
     margin-right:15px;
     font-weight: 300;
+  }
+  .m_whitepaper .lang p a {
+    color: #fff !important;
   }
   
   /* COMMON */
