@@ -198,11 +198,41 @@ section {
 .fillRed {
   color: #b71b1b;
 }
+.iframeBox {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999999999999;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+.iframeBox button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5%;
+  height: 5%;
+  font-size: 18px;
+  font-weight: 700;
+  border: 3px solid #000;
+  cursor: pointer;
+}
+.iframeBox .iframe_inner {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.iframeBox .iframe_inner iframe{
+  display: none;
+}
 
 /* 콘텐츠 */
 /* CONTENT01 */
 #content01 {
   width: 100%;
+  z-index: 9999;
 }
 /* ---- particles.js container ---- */ 
 #tsparticles{ 

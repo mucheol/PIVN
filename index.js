@@ -105,4 +105,19 @@ $('.subTextBox p').hover(function(){
     $('#y2022').css({'color':'#fff'})
   })
 
+  // PDF
+  $('.pdfBtn').on('click',function(e){
+    $(".iframeBox").css({'display':'flex'})
+  })
+  $('.pdfE').on('click',function(e){
+    $(".iframeBox .pdfEng").css({'display':'block'})
+  })
+  $('.pdfK').on('click',function(e){
+    $(".iframeBox .pdfKor").css({'display':'block'})
+  })
+  $('.iframeBox button').on('click',function(e){
+    $(".iframeBox").css({'display':'none'})
+    $(".iframeBox iframe").css({'display':'none'})
+  })
+  
 });

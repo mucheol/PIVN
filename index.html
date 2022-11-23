@@ -66,8 +66,8 @@
             <div class="m_whitepaper">
               <p>WHITEPAPER</p>
               <div class="lang">
-                <p><a href="file/pivn_whitepaper_eng.pdf" style="color:#fff" download>ENGLISH</a></p>
-                <p><a href="file/pivn_whitepaper_kor.pdf" style="color:#fff" download>KOREAN</a></p>
+                <p class="pdfE pdfBtn">ENGLISH</p>
+                <p class="pdfK pdfBtn">KOREAN</p>
               </div>
             </div>
           </nav>
@@ -78,9 +78,9 @@
               <span>WHITEPAPER</span>
             </div>
             <div class="item">
-              <span class="pic"><a href="file/pivn_whitepaper_eng.pdf" download>ENGLISH</a></span>
+              <span class="pic pdfE pdfBtn">ENGLISH</span>
               <span class="horLine"></span>
-              <span class="pic"><a href="file/pivn_whitepaper_kor.pdf" download>KOREAN</a></span>
+              <span class="pic pdfK pdfBtn">KOREAN</span>
             </div>
             <div class="title">
               <span>LANGUAGE</span>
@@ -98,6 +98,13 @@
           <span></span>
         </div>
       </header>
+      <div class="iframeBox">
+        <button>닫기</button>
+        <div class="iframe_inner">
+          <iframe src="./plugin/web/viewer.html?file=pivn_whitepaper_kor.pdf" style="width:100%; height:100%;" class="pdfKor"></iframe>
+          <iframe src="./plugin/web/viewer.html?file=pivn_whitepaper_eng.pdf" style="width:100%; height:100%;" class="pdfEng"></iframe>
+        </div>
+      </div>
       <div id="fullpage" class="container">
         <!-- CONTENT01 -->
         <section id="content01" class="section">
