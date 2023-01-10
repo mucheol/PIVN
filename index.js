@@ -75,6 +75,13 @@ $('.subTextBox p').hover(function(){
           slidesToShow: 3,
           slidesToScroll: 1
         }
+      },
+      {
+        breakpoint: 920,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
       }
     ]
   });

@@ -1069,11 +1069,10 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100%;
   text-align: end;
   margin-top: 60px;
-  margin-right: 950px;
 }
 #content06 .loadBox01 p{
   text-align: end;
@@ -1538,7 +1537,9 @@ section {
     width: 41rem;
     height: 13rem;
   }
-  
+  .inner {
+    width: 100%;
+  }
 
   /* L_CONTENT02 */
   #content02 .imgBox {
@@ -1576,19 +1577,19 @@ section {
     height: 98%;
   }
   #content03 .subTextBox p:nth-child(1) {
-    margin-left: 13rem;
+    margin-left: 8vw;
   }
   #content03 .subTextBox p:nth-child(2) {
-    margin-left: 20.3rem;
+    margin-left: 10vw;
   }
   #content03 .subTextBox p:nth-child(3) {
-    margin-left: 21rem;
+    margin-left: 12vw;
   }
   #content03 .subTextBox p:nth-child(4) {
-    margin-left: 16.5rem;
+    margin-left: 10vw;
   }
   #content03 .subTextBox p:nth-child(5) {
-    margin-left: 6.5rem;
+    margin-left: 7vw;
   }
 
   /* L_CONTENT04 */
@@ -1622,7 +1623,7 @@ section {
     margin-top: 30px;
   }
   #content05 .graph img {
-    width: 890px;
+    width: 76vw;
   }
   #content05 .des {
     margin-top: 30px;
@@ -1635,6 +1636,16 @@ section {
   #content06 .loadBox01 p:nth-child(2) {
     margin-top: 18px;
   }
+  #content06 .loadBox02 {
+    width: 470px;
+    margin-left: 305px;
+  }
+  #content06 .loadBox03 {
+    margin-left: 55px;
+  }
+  #content06 .roadDot02 {
+    left: calc(50% + 160px);
+}
   #content06 .roadLine {
     top: 131px;
   }
@@ -1656,7 +1667,7 @@ section {
     padding-bottom: 50px;
   }
   #content07 .photoBox {
-    width: 900px;
+    width: 83vw;
     height: 460px;
     margin-top: 0;
   }
@@ -1665,11 +1676,14 @@ section {
   }
   #content07 .photoBox .profiles {
     padding: 45px 0 35px;
+    min-height: 400px;
+    height: auto;
+    margin: 0 1.5vw;
   }
   #content07 .photoBox .profiles .imgBox {
-    width: 150px;
-    height: 138px;
-    border-radius: 20px;
+    width: 16vw;
+    height: 14vw;
+    border-radius: 3vw;
   }
   .footer {
     width: 100vw;
@@ -1692,16 +1706,16 @@ section {
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 5%;
+    height: 10%;
     min-height: 20px;
     font-size: 18px;
     font-weight: 700;
-    border: 3px solid #000;
     cursor: pointer;
+    border: none;
   }
   .iframeBox .iframe_inner {
     width: 100%;
-    height: 95%;
+    height: 90%;
     margin: 0 auto;
   }
   .onlyM {

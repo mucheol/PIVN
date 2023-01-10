@@ -35,6 +35,9 @@
 }
 
 @media (max-width: 1366px) {
+  #content06 .year {
+    left: -70px;
+  }
   #content06 .roadDot{
     left: calc(50% - 435px);
   }
@@ -42,7 +45,11 @@
     left: calc(50% + 198px);
 }
   #content06 .loadBox02 {
-    margin-left: 265px;
+    width: 40vw;
+    margin-left: 240px;
+  }
+  #content06 .loadBox03 {
+    margin-left: 85px;
   }
 
 }
