@@ -2,7 +2,6 @@
 .langBox a:nth-child(2)::after {
   display: none;
 }
-
 #content02 .textBox {
   text-align: center;
 }
@@ -38,20 +37,107 @@
   #content06 .year {
     left: -70px;
   }
-  #content06 .roadDot{
-    left: calc(50% - 435px);
-  }
-  #content06 .roadDot02 {
-    left: calc(50% + 198px);
-}
   #content06 .loadBox02 {
     width: 40vw;
+    min-width: 300px;
     margin-left: 240px;
   }
   #content06 .loadBox03 {
     margin-left: 85px;
   }
+  #content06 .roadDot, 
+  #content06 .roadDot02 {
+    display: none;
+  }
 
+}
+@media (max-width: 767px) {
+  #content01 .textBox p {
+    text-align: center;
+  }
+  #content04 .rightBox {
+    width: 100%;
+  }
+  #content06 .inner {
+    display: none;
+  }
+  #content06 .m_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 91vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  #content06 .loadBox01 {
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0;
+    height: 100px;
+}
+  #content06 .loadBox01 p {
+    text-align: center;
+    color: #fff;
+    width: 250px;
+    margin-left: 0px;
+  }
+  #content06 .loadBox01 p:nth-child(1) {
+    font-size: 2.4rem;
+    margin-top: 0;
+  }
+  #content06 .roadLine {
+    position: relative;
+    top: 0;
+    width: 84vw;
+    margin-left: 0;
+
+  }
+  #content06.active .roadLine {
+    animation: none;
+  }
+  #content06 .yearBox {
+    display: flex;
+    position: relative;
+    margin-left: 9vw;
+    width: 100%;
+  }
+  #content06 .roadDot, 
+  #content06 .roadDot02 {
+    display: block;
+  }
+  #content06 .roadDot {
+    position: relative;
+    top: 14px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    opacity: 1;
+  }
+  #content06.active .roadDot {
+    animation: none;
+  }
+  #content06 .year {
+    position: relative;
+    left: 0;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+  }
+  #content06 .loadBox {
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 0;
+  }
+  #content06 .loadBox02 {
+    width: 85vw;
+    margin-left: 0px;
+  }
+  #content06 .loadBox03 {
+    margin-left: 0px;
+  }
 }
 @media (max-width: 480px) {
   #content03 .subTextBox p {
@@ -60,9 +146,7 @@
   #content03 .subTextBox p:nth-child(3) {
     margin-left: 18rem;
   }
-  #content04 .rightBox {
-    width: 100%;
-  }
+ 
   #content04 .m_des {
     width: 300px;
     margin: 0 auto;

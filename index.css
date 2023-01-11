@@ -434,6 +434,7 @@ section {
   font-size: 2.8rem;
   margin: 0 3vw;
   opacity: 0;
+  text-align: center;
 }
 #content02.active .textBox p {
   animation: slideUp .5s linear forwards;
@@ -1491,14 +1492,14 @@ section {
     position: absolute;
     width: 35px;
     height: 35px;
-    top: 18px;
+    top: 28px;
     right: 30px;
     cursor: pointer;
   }
   .m_hamburger::after {
     display: none;
     position: absolute;
-    top: 65px;
+    top: 61px;
     left: 50%;
     transform: translate(-50%,-50%);
     content: "";
@@ -1676,15 +1677,16 @@ section {
   }
   #content07 .photoBox .profiles {
     padding: 45px 0 35px;
-    min-height: 400px;
+    min-height: 382px;
     height: auto;
     margin: 0 1.5vw;
   }
   #content07 .photoBox .profiles .imgBox {
-    width: 16vw;
-    height: 14vw;
+    width: 60%;
+    height: 40%;
     border-radius: 3vw;
   }
+  
   .footer {
     width: 100vw;
     height: 110px;
@@ -1694,6 +1696,279 @@ section {
   }
   .footer .foot_inner {
     height: auto;
+  }
+}
+
+@media (max-width: 767px) {  /* @@@@@@@@@@@@@@@@@@@@@@@@ */
+  .langMenu span {
+    font-size: 2rem;
+  }
+  .langBox a {
+    font-size: 2rem;
+  }
+  .m_hamburger {
+    width: 30px;
+    top: 33px;
+  }
+  .m_hamburger::after { 
+    top: 53px;
+  }
+  .m_hamburger span { 
+    margin: 6px 0;
+  }
+  .header_inner nav {
+    width: 180px;
+    height: 360px;
+    padding: 15px 0 15px 35px;
+  }
+  .header_inner nav ul li {
+    padding: 17px 0;
+  }
+  #content02 .imgBox {
+    width: 80vw;
+  }
+
+  #content03 .container {
+    position: absolute;
+    left: calc(-4.5vw - 200px);
+    width: 440px;
+  }
+  #content03 #inner {
+    width: 91vw;
+  }
+  #content03 .loader {
+    width: 440px;
+    height: 440px;
+  }
+  #content03 .loader span {
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  #content03 .loader::before {
+    background-size: 220px 424px;
+  }
+  #content03 .loader::after {
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000, 0 0 90px #ff0000, 0 0 100px #ff0000;
+}
+  #content03 .textBox {
+    width: 160px;
+    margin-left: 220px;
+    align-items: baseline;
+  }
+  #content03 .title {
+    font-size: 14px;
+}
+  #content03 .content_des {
+    text-align: left;
+    font-size: 16px;
+  }
+  #content03 .subTextBox {
+    position: absolute;
+    right: 0;
+  }
+  #content03 #inner.p05 .subTextBox_background {
+    display: none;
+  }
+  #content03 .subTextBox p {
+    height: 90px;
+    font-size: 14px;
+  }
+  #content03 .subTextBox p span {
+    top: 41px;
+    left: -20px;
+    width: 6px;
+    height: 6px;
+  }
+  #content03 .subTextBox p:nth-child(1) {
+    margin-left: 2vw;
+  }
+  #content03 .subTextBox p:nth-child(2) {
+    margin-left: 7vw;
+  }
+  #content03 .subTextBox p:nth-child(3) {
+    margin-left: 9vw;
+  }
+  #content03 .subTextBox p:nth-child(4) {
+    margin-left: 5vw;
+  }
+  #content03 .subTextBox p:nth-child(5) {
+    margin-left: 1vw;
+  }
+  #content03 .subTextBox_background {
+    left: -100px;
+  }
+  #content04 .rightBox {
+    width: 100vw;
+  }
+  #content05 .graph img {
+    min-width: 450px;
+  }
+  #content06 .inner {
+    display: none;
+  }
+  #content06 .m_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 91vw;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  #content06 .loadBox01 {
+    text-align: center;
+    margin-top: 0px;
+    margin-right: 0;
+    height: 100px;
+}
+  #content06 .loadBox01 p {
+    text-align: center;
+    color: #fff;
+    width: 250px;
+    margin-left: 0px;
+  }
+  #content06 .loadBox01 p:nth-child(1) {
+    font-size: 2.4rem;
+    margin-top: 0;
+  }
+  #content06 .roadLine {
+    position: relative;
+    top: 0;
+    width: 84vw;
+    margin-left: 0;
+
+  }
+  #content06.active .roadLine {
+    animation: none;
+  }
+  #content06 .yearBox {
+    display: flex;
+    position: relative;
+    margin-left: 9vw;
+    width: 100%;
+  }
+  #content06 .roadDot {
+    position: relative;
+    top: 14px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    opacity: 1;
+  }
+  #content06.active .roadDot {
+    animation: none;
+  }
+  #content06 .year {
+    position: relative;
+    left: 0;
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 1;
+  }
+  #content06 .yearBox.y2022 p:nth-child(2) {
+    color: #b71b1b;
+  }
+  #content06 .yearBox.y2023 p:nth-child(3) {
+    color: #b71b1b;
+  }
+  #content06 .loadBox {
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  #content06 .loadBox02 {
+    margin-left: 0px;
+    height: 400px;
+  }
+  #content06 ul p {
+   margin-bottom: 0px;
+  }
+  #content06 ul p,
+  #content06 ul li {
+    font-size: 15px;
+  }
+  #content06 ul li {
+    margin-left: 15px;
+  }
+  #content06.active .loadBox02 ul:nth-child(1) p,
+  #content06.active .loadBox02 ul:nth-child(1) li {
+    animation: slideUp2 .4s linear forwards;
+  }
+  #content06.active .loadBox02 ul:nth-child(2) p,
+  #content06.active .loadBox02 ul:nth-child(2) li {
+    animation: slideUp2 .4s linear forwards;
+    animation-delay: .3s;
+  }
+  #content06.active .loadBox02 ul:nth-child(3) p,
+  #content06.active .loadBox02 ul:nth-child(3) li {
+    animation: slideUp2 .4s linear forwards;
+    animation-delay: .6s;
+  }
+  #content06.active .loadBox02 ul:nth-child(4) p,
+  #content06.active .loadBox02 ul:nth-child(4) li {
+    animation: slideUp2 .4s linear forwards;
+    animation-delay: .9s;
+  }
+  #content06 .loadBox03 {
+    display: none;
+    margin-left: 0px;
+    height: 400px;
+  }
+  #content06.active .loadBox03 ul:nth-child(1) p
+  , #content06.active .loadBox03 ul:nth-child(1) li {
+    animation: slideUp2 .4s linear forwards;
+  }
+  #content06.active .loadBox03 ul:nth-child(2) p
+  , #content06.active .loadBox03 ul:nth-child(2) li {
+    animation: slideUp2 .4s linear forwards;
+    animation-delay: 0.3s;
+  }
+  #content06.active .loadBox03 ul:nth-child(3) p
+  , #content06.active .loadBox03 ul:nth-child(3) li {
+    animation: slideUp2 .4s linear forwards;
+    animation-delay: 0.6s;
+  }
+  #content06 .loadBox ul:nth-child(1) {
+    margin-top: 10px;
+  }
+  #content06 ul {
+    margin-top: 10px;
+  }
+  #content06 .loadBox03 ul:nth-child(1) {
+    margin-top: 15px;
+}
+  #content06 .loadBox03 ul:nth-child(2) {
+    margin-top: 15px;
+}
+  #content06 .loadBox03 ul {
+    margin-top: 15px;
+  }
+  .slick-prev::after {
+    width: 30px;
+    height: 30px;
+  }
+  .slick-next::after {
+    width: 30px;
+    height: 30px;
+  }
+  #content07 .photoBox .profiles .major {
+    width: 80%;
+  }
+  #content07 .title {
+    padding-bottom: 30px;
+  }
+  #content07 .photoBox .profiles {
+    min-height: 365px;
+  }
+
+  .footer .iconBox { 
+    top: 55px;
   }
 }
 
@@ -1962,23 +2237,10 @@ section {
 }
   #content03 .textBox {
     width: 160px;
-    margin-left: 190px;
+    margin-left: 180px;
     align-items: baseline;
   }
-  #content03 .title {
-    font-size: 14px;
-}
-  #content03 .content_des {
-    text-align: left;
-    font-size: 16px;
-  }
-  #content03 .subTextBox {
-    position: absolute;
-    right: 0;
-  }
-  #content03 #inner.p05 .subTextBox_background {
-    display: none;
-  }
+
   #content03 .subTextBox p {
     height: 90px;
     font-size: 14px;
@@ -1994,6 +2256,9 @@ section {
   }
   #content03 .subTextBox p:nth-child(2) {
     margin-left: 17.3rem;
+  }
+  #content03 .subTextBox p:nth-child(3) {
+    margin-left: 19.3rem;
   }
   #content03 .subTextBox p:nth-child(4) {
     margin-left: 14.5rem;
@@ -2045,6 +2310,7 @@ section {
   }
   #content05 .graph img {
     width: 100%;
+    min-width: 280px;
     z-index: -1;
   }
   #content05 .graph img:nth-child(1) {
@@ -2069,149 +2335,10 @@ section {
   }
 
   /* M_CONTENT06 */
-  #content06 .inner {
-    display: none;
-  }
-  #content06 .m_inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 91vw;
-    margin: 0 auto;
-    padding-bottom: 50px;
-  }
-  #content06 .loadBox01 {
-    text-align: center;
-    margin-top: 0px;
-    margin-right: 0;
-    height: 100px;
-}
-  #content06 .loadBox01 p {
-    text-align: center;
-    color: #fff;
-    width: 250px;
-    margin-left: 0px;
-  }
-  #content06 .loadBox01 p:nth-child(1) {
-    font-size: 2.4rem;
-    margin-top: 0;
-  }
-  #content06 .roadLine {
-    position: relative;
-    top: 0;
-    width: 84vw;
-    margin-left: 0;
-
-  }
-  #content06.active .roadLine {
-    animation: none;
-  }
-  #content06 .yearBox {
-    display: flex;
-    position: relative;
-    margin-left: 9vw;
-    width: 100%;
-  }
-  #content06 .roadDot {
-    position: relative;
-    top: 14px;
-    left: 0;
-    width: 7px;
-    height: 7px;
-    opacity: 1;
-  }
-  #content06.active .roadDot {
-    animation: none;
-  }
-  #content06 .year {
-    position: relative;
-    left: 0;
-    padding: 10px;
-    font-size: 14px;
-    color: #fff;
-    cursor: pointer;
-    opacity: 1;
-  }
-  #content06 .yearBox.y2022 p:nth-child(2) {
-    color: #b71b1b;
-  }
-  #content06 .yearBox.y2023 p:nth-child(3) {
-    color: #b71b1b;
-  }
-  #content06 .loadBox {
-    width: 100%;
-    margin-left: 30px;
-    margin-top: 0;
-  }
-  #content06 .loadBox02 {
-    margin-left: 0px;
-    height: 400px;
-  }
-  #content06 ul p {
-   margin-bottom: 0px;
-  }
-  #content06 ul p,
-  #content06 ul li {
+  #content06 ul p, #content06 ul li {
     font-size: 12px;
-  }
-  #content06 ul li {
-    margin-left: 15px;
-  }
-  #content06.active .loadBox02 ul:nth-child(1) p,
-  #content06.active .loadBox02 ul:nth-child(1) li {
-    animation: slideUp2 .4s linear forwards;
-  }
-  #content06.active .loadBox02 ul:nth-child(2) p,
-  #content06.active .loadBox02 ul:nth-child(2) li {
-    animation: slideUp2 .4s linear forwards;
-    animation-delay: .3s;
-  }
-  #content06.active .loadBox02 ul:nth-child(3) p,
-  #content06.active .loadBox02 ul:nth-child(3) li {
-    animation: slideUp2 .4s linear forwards;
-    animation-delay: .6s;
-  }
-  #content06.active .loadBox02 ul:nth-child(4) p,
-  #content06.active .loadBox02 ul:nth-child(4) li {
-    animation: slideUp2 .4s linear forwards;
-    animation-delay: .9s;
-  }
-  #content06 .loadBox03 {
-    display: none;
-    margin-left: 0px;
-    height: 400px;
-  }
-  #content06.active .loadBox03 ul:nth-child(1) p
-  , #content06.active .loadBox03 ul:nth-child(1) li {
-    animation: slideUp2 .4s linear forwards;
-  }
-  #content06.active .loadBox03 ul:nth-child(2) p
-  , #content06.active .loadBox03 ul:nth-child(2) li {
-    animation: slideUp2 .4s linear forwards;
-    animation-delay: 0.3s;
-  }
-  #content06.active .loadBox03 ul:nth-child(3) p
-  , #content06.active .loadBox03 ul:nth-child(3) li {
-    animation: slideUp2 .4s linear forwards;
-    animation-delay: 0.6s;
-  }
-  #content06 .loadBox ul:nth-child(1) {
-    margin-top: 10px;
-  }
-  #content06 ul {
-    margin-top: 10px;
-  }
-  #content06 .loadBox03 ul:nth-child(1) {
-    margin-top: 15px;
 }
-  #content06 .loadBox03 ul:nth-child(2) {
-    margin-top: 15px;
-}
-  #content06 .loadBox03 ul {
-    margin-top: 15px;
-  }
-
+ 
   /* M_CONTENT07 */
   #content07 .title {
     padding-top: 0px;
@@ -2219,6 +2346,7 @@ section {
   }
   #content07 .photoBox {
     height: 430px;
+    width: 150vw;
   }
   #content07 .photoBox .profiles {
     height: 358px;
