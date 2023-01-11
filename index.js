@@ -86,7 +86,7 @@ $('.subTextBox p').hover(function(){
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1
         }
       }

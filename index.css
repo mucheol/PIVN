@@ -1295,11 +1295,11 @@ section {
 #content07 .photoBox .profiles .imgBox {
   width: 156px;
   height: 145px;
-  border-radius: 33px;
   overflow: hidden;
 }
 #content07 .photoBox .profiles .imgBox img{
   width: 100%;
+  border-radius: 15%;
 }
 #content07 .photoBox .profiles p {
   color: #fff;
@@ -1329,7 +1329,7 @@ section {
 #content07 .photoBox .profiles .major {
   font-size: 1.6rem;
   margin-top: 15px;
-  
+  line-height: 1.5;
   text-align: center;
 }
 .slick-prev,
@@ -1684,7 +1684,6 @@ section {
   #content07 .photoBox .profiles .imgBox {
     width: 60%;
     height: 40%;
-    border-radius: 3vw;
   }
   
   .footer {
@@ -2346,7 +2345,7 @@ section {
   }
   #content07 .photoBox {
     height: 430px;
-    width: 150vw;
+    width: 88vw;
   }
   #content07 .photoBox .profiles {
     height: 358px;
@@ -2354,6 +2353,9 @@ section {
   #content07 .photoBox .profiles .position {
     font-size: 22px;
     margin-top: 15px;
+  }
+  #content07 .photoBox .profiles .imgBox {
+    width: 55%;
   }
   #content07 .photoBox .profiles .name {
     font-size: 13px;
@@ -2363,14 +2365,14 @@ section {
   }
   #content07 .photoBox .profiles .major {
     font-size: 14px;
-    line-height: 16px;
-    width: 230px;
+    line-height: 18px;
+    width: 85%;
     text-align: center;
   }
   .footer .imgBox {
-  width: 95px;
-  height: 45px;
-  margin-left: 0;
+    width: 95px;
+    height: 45px;
+    margin-left: 0;
   }
   .footer .imgBox img {
   width: 70px;
