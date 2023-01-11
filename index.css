@@ -273,6 +273,7 @@ section {
   font-size: 3rem;
   line-height: 5rem;
   margin-top: 50px;
+  text-align: center;
 }
 #content01 .textBox span {
   font-size: 4rem;
@@ -1677,7 +1678,7 @@ section {
   }
   #content07 .photoBox .profiles {
     padding: 45px 0 35px;
-    min-height: 382px;
+    min-height: 408px;
     height: auto;
     margin: 0 1.5vw;
   }
@@ -1726,6 +1727,9 @@ section {
   #content02 .imgBox {
     width: 80vw;
   }
+  #content02 .textBox p {
+    font-size: 2.5rem;
+  }
 
   #content03 .container {
     position: absolute;
@@ -1767,7 +1771,7 @@ section {
   }
   #content03 .subTextBox {
     position: absolute;
-    right: 0;
+    left: 50vw;
   }
   #content03 #inner.p05 .subTextBox_background {
     display: none;
@@ -2239,7 +2243,10 @@ section {
     margin-left: 180px;
     align-items: baseline;
   }
-
+  #content03 .subTextBox {
+    right: 0;
+    left: auto;
+  }
   #content03 .subTextBox p {
     height: 90px;
     font-size: 14px;
