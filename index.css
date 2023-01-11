@@ -1700,10 +1700,10 @@ section {
 
 @media (max-width: 767px) {  /* @@@@@@@@@@@@@@@@@@@@@@@@ */
   .langMenu span {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .langBox a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .m_hamburger {
     width: 30px;
@@ -2348,7 +2348,9 @@ section {
     width: 88vw;
   }
   #content07 .photoBox .profiles {
+    width: 70vw !important;
     height: 358px;
+    margin: 0 auto;
   }
   #content07 .photoBox .profiles .position {
     font-size: 22px;
@@ -2356,6 +2358,7 @@ section {
   }
   #content07 .photoBox .profiles .imgBox {
     width: 55%;
+    height: 60%;
   }
   #content07 .photoBox .profiles .name {
     font-size: 13px;
@@ -2368,6 +2371,9 @@ section {
     line-height: 18px;
     width: 85%;
     text-align: center;
+  }
+  .slick-next::after {
+    left: 15px;
   }
   .footer .imgBox {
     width: 95px;

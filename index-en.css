@@ -202,6 +202,10 @@
   #content06 .loadBox03 {
     margin-left: 0px;
 }
+#content07 .photoBox .profiles .imgBox {
+  width: 45%;
+  height: 60%;
+}
 #content07 .photoBox .profiles .name {
   font-size: 14px;
 }
