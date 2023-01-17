@@ -823,8 +823,8 @@ section {
 }
 #content04 .itemBox01 .etc {
   display: flex;
-  align-items: flex-end;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 37px;
 }
 #content04 .itemBox01 .etc button{
   width: 180px;
@@ -843,14 +843,16 @@ section {
   color: #fff;
   background-color: #B71B1B;
 }
-#content04 .itemBox01 .etc img:nth-child(2) {
-  width: 147px;
-  height: 30px;
+#content04 .itemBox01 .etc a {
   margin: 0 26px 5px;
 }
+#content04 .itemBox01 .etc a img {
+  width: 147px;
+  height: 30px;
+}
 #content04 .itemBox01 .etc img:nth-child(3) {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 #content04 .itemBox02 {
   position: relative;
@@ -1545,14 +1547,16 @@ section {
     line-height: 20px;
     border-radius: 22.5px;
   }
-  #content04 .itemBox01 .etc img:nth-child(2) {
-    width: 93px;
-    height: 19px;
+  #content04 .itemBox01 .etc a {
     margin: 0 22px 5px;
   }
+  #content04 .itemBox01 .etc a img {
+    width: 93px;
+    height: 19px;
+  }
   #content04 .itemBox01 .etc img:nth-child(3) {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
   }
   #content04 .itemBox02 {
     position: relative;
@@ -1827,14 +1831,15 @@ section {
     height: 56px;
     border-radius: 28px;
   }
-  #content04 .itemBox01 .etc img:nth-child(2) {
+  #content04 .itemBox01 .etc a {
+    margin: 0 20px 5px;
+  }
+  #content04 .itemBox01 .etc a img {
     width: 112px;
     height: 23px;
-    margin: 0 20px 5px;
 }
 #content04 .itemBox01 .etc img:nth-child(3) {
-  width: 57px;
-  height: 57px;
+  display: none;
 }
 
   /* content05 */
@@ -2329,7 +2334,7 @@ section {
   }
   #content04 .itemBox01 {
     width: 80vw;
-    padding: 7vw 30px 0;
+    padding: 5vw 0 1vw 0;
     margin: 0 auto;
   }
   #content04 .itemBox01 > img {
@@ -2347,17 +2352,20 @@ section {
     width: 100%;
     font-size: 14px;
     line-height: 22px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
   #content04 .itemBox01 .etc button {
     width: 105px;
     height: 42px;
     border-radius: 21px;
   }
-  #content04 .itemBox01 .etc img:nth-child(2) {
+  #content04 .itemBox01 .etc a {
+    margin: 0 15px 3px;
+
+  }
+  #content04 .itemBox01 .etc a img {
     width: 84px;
     height: 17px;
-    margin: 0 15px 3px;
   }
   #content04 .itemBox01 .etc img:nth-child(3) {
     width: 42px;
