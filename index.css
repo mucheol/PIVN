@@ -1290,9 +1290,44 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* section08 */
+#content08 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  padding-top: 165px;
+}
+#content08 .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+#content08 .title {
+  color: #fff;
+  font-size: 3.4rem;
+}
+#content08 .partnersLogoBox{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1120px;
+  gap: 16px 8px;
+  margin-top: 77px;
+}
+#content08 .partnersLogoBox img{
+  width: 265px;
+  height: 130px;
+}
+#footer {
+  position: relative;
+  align-items: center;
+    width: 100vw;
+}
 .footer {
-  position: absolute;
-  bottom: 0;
   background-color: black;
   width: 1300px;
   height: 185px;
@@ -1654,7 +1689,18 @@ section {
     width: 60%;
     height: 40%;
   }
-  
+  /* L_CONTENT08 */
+  #content08 {
+    padding-top: 160px;
+  }
+  #content08 .partnersLogoBox{
+    width: 760px;
+    margin-top: 66px;
+  }
+  #content08 .partnersLogoBox img{
+    width: 180px;
+    height: 80px;
+  }
   .footer {
     width: 100vw;
     height: 110px;
@@ -2005,7 +2051,17 @@ section {
   #content07 .photoBox .profiles {
     min-height: 365px;
   }
-
+  #content08 {
+    padding-top: 86px;
+  }
+  #content08 .partnersLogoBox{
+    width: 424px;
+    margin-top: 37px;
+  }
+  #content08 .partnersLogoBox img{
+    width: 200px;
+    height: 100px;
+  }
   .footer .iconBox { 
     top: 55px;
   }
@@ -2444,6 +2500,20 @@ section {
   }
   .slick-next::after {
     left: 15px;
+  }
+  #content08 {
+    padding-top: 69px;
+  }
+  #content08 .inner{
+    padding-top: 0;
+  }
+  #content08 .partnersLogoBox{
+    width: 324px;
+    margin-top: 52px;
+  }
+  #content08 .partnersLogoBox img{
+    width: 150px;
+    height: 70px;
   }
   .footer .imgBox {
     width: 95px;

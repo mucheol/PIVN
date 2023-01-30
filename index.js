@@ -133,5 +133,4 @@ $('.subTextBox p').hover(function(){
     $(".iframeBox").css({'display':'none'})
     $(".iframeBox iframe").css({'display':'none'})
   })
-  
 });
